@@ -1,0 +1,23 @@
+:root { font-family: system-ui, -apple-system, 'Segoe UI', sans-serif; color: #17293e; background: #f3f6fa; line-height: 1.55; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+main { max-width: 850px; margin: auto; padding: clamp(16px, 4vw, 36px); }
+header, section, aside { background: white; padding: clamp(18px, 4vw, 30px); border-radius: 15px; margin-bottom: 18px; box-shadow: 0 2px 13px #152a4411; }
+h1 { font-size: clamp(28px, 4vw, 42px); margin: 0 0 10px; }
+h2 { margin-top: 0; font-size: 22px; border-left: 4px solid #0876cb; padding-left: 12px; }
+a { color: #065caa; }
+.eyebrow { color: #0b6999; font-weight: 700; }
+form { display: grid; gap: 9px; max-width: 620px; }
+label { font-weight: 650; }
+input, button { border-radius: 9px; font: inherit; padding: 11px 12px; }
+input { width: 100%; border: 1px solid #9caec2; }
+button { background: #065daa; border: 0; color: white; font-weight: 700; cursor: pointer; margin: 8px 0 12px; }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid #ffab23; outline-offset: 2px; }
+button:hover { background: #074a80; }
+output { display: block; overflow-wrap: anywhere; }
+dl { display: grid; grid-template-columns: minmax(130px, 1fr) 2fr; margin: 0; border-top: 1px solid #dbe3ed; }
+dt, dd { padding: 8px; border-bottom: 1px solid #dbe3ed; margin: 0; }
+dt { font-weight: 600; }
+.result { font-weight: 700; font-size: 18px; }
+footer { text-align: center; font-size: 13px; color: #53687b; }
+@media(max-width:500px){ dl { grid-template-columns: 1fr; } dt { border-bottom: 0; padding-bottom: 0; } dd { padding-top: 0; } }

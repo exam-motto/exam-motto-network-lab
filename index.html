@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Free browser-based IPv4 CIDR subnet and IPv6 prefix practice with explanations for networking students.">
+  <title>Network Address Lab | Exam-Motto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Exam-Motto • Open learning tool</p>
+      <h1>Network Address Lab</h1>
+      <p>Explore IPv4 subnetting and IPv6 prefix membership with calculations you can check step by step. No sign-in, tracking, or paid API.</p>
+      <p><a href="https://exam-motto.com/exam/comptia-network-plus/" rel="noopener noreferrer">Full Network+ learning guide on Exam-Motto</a></p>
+    </header>
+    <section aria-labelledby="ipv4-head">
+      <h2 id="ipv4-head">IPv4 CIDR subnet calculator</h2>
+      <form id="ipv4-form">
+        <label for="ipv4">IPv4 address/prefix</label>
+        <input id="ipv4" name="ipv4" value="192.168.14.77/27" autocomplete="off" spellcheck="false" required>
+        <button type="submit">Calculate and explain</button>
+      </form>
+      <output id="ipv4-result" aria-live="polite"></output>
+    </section>
+    <section aria-labelledby="ipv6-head">
+      <h2 id="ipv6-head">IPv6 prefix membership</h2>
+      <form id="ipv6-form">
+        <label for="ipv6-net">Network prefix</label>
+        <input id="ipv6-net" name="ipv6-net" value="2001:db8:12:34::/64" autocomplete="off" spellcheck="false" required>
+        <label for="ipv6-candidate">Candidate address</label>
+        <input id="ipv6-candidate" name="ipv6-candidate" value="2001:db8:12:34::beef" autocomplete="off" spellcheck="false" required>
+        <button type="submit">Check and explain</button>
+      </form>
+      <output id="ipv6-result" aria-live="polite"></output>
+    </section>
+    <aside><h2>Learning notes</h2><p>IPv4 /31 is a special case used for point-to-point links (RFC 3021); /32 identifies one address. IPv6 prefix membership compares network bits, not a text prefix. This is an original educational implementation, not an official certification product.</p></aside>
+    <footer><p><a href="https://exam-motto.com/">Exam-Motto</a> · Free open-source networking practice</p></footer>
+  </main>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
